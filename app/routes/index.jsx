@@ -1,5 +1,7 @@
-export default function Index() {
+const Index = () => {
   return (
-    <h1>Hola Mundo en Remix Run</h1>
-  );
+    <div>Desde index.jsx</div>
+  )
 }
+
+export default Index
