@@ -9,7 +9,7 @@ const Header = () => {
       {/* ----------------------Contenido-Header---------------------- */}
       <div className="flex flex-col items-center md:flex-row md:justify-between container mx-auto">
         {/* ----------------------Logo---------------------- */}
-        <Link className="ml-10" to="/">
+        <Link className="md:ml-10" to="/">
           <img className="w-full" src={logo} alt="Imagen logo" />
         </Link>
 
