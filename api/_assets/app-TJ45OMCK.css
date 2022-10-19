@@ -563,10 +563,6 @@ video {
   margin-top: 5rem;
 }
 
-.mt-14 {
-  margin-top: 3.5rem;
-}
-
 .flex {
   display: flex;
 }
@@ -745,10 +741,6 @@ video {
   padding-bottom: 1.25rem;
 }
 
-.text-center {
-  text-align: center;
-}
-
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
@@ -789,17 +781,8 @@ video {
   line-height: 2.25rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
 .font-black {
   font-weight: 900;
-}
-
-.font-bold {
-  font-weight: 700;
 }
 
 .uppercase {
@@ -914,10 +897,6 @@ main {
 
   .md\:flex-row {
     flex-direction: row;
-  }
-
-  .md\:flex-col {
-    flex-direction: column;
   }
 
   .md\:justify-between {

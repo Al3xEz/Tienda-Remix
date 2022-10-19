@@ -26,11 +26,6 @@ body {
   line-height: 1.5;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 [class*="contenedor"],
 main {
   width: min(95%, 120rem);
@@ -43,4 +38,13 @@ main {
   font-weight: 900;
   color: var(--primary);
   margin: 5rem 0;
+}
+
+.header {
+  background-image: linear-gradient(
+      to right,
+      rgb(0 0 0 / 0.8),
+      rgb(0 0 0 / 0.7)
+    ),
+    url(/img/header.jpg);
 }

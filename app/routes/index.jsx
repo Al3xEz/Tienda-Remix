@@ -1,6 +1,6 @@
 const Index = () => {
   return (
-    <div>Desde index.jsx</div>
+    <div>Index.jsx</div>
   )
 }
 
