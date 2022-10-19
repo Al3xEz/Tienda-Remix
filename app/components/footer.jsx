@@ -3,7 +3,7 @@ import { Link, useLocation } from "@remix-run/react";
 const Footer = () => {
   const location = useLocation();
   return (
-    <footer className=" bg-zinc-900 py-20 md:absolute w-full md:bottom-0">
+    <footer className=" bg-zinc-900 py-20 absolute w-full bottom-0">
       {/* ----------------------Contenido Footer---------------------- */}
       <div className="container mx-auto flex flex-col items-center md:flex-row md:justify-between">
         {/* ----------------------Navegacion---------------------- */}
