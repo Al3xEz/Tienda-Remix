@@ -606,10 +606,6 @@ video {
   margin-left: 2.5rem;
 }
 
-.mr-10 {
-  margin-right: 2.5rem;
-}
-
 .flex {
   display: flex;
 }
@@ -946,11 +942,6 @@ main {
   color: rgb(245 158 11 / var(--tw-text-opacity));
 }
 
-.hover\:text-green-500:hover {
-  --tw-text-opacity: 1;
-  color: rgb(34 197 94 / var(--tw-text-opacity));
-}
-
 @media (min-width: 768px) {
   .md\:mx-8 {
     margin-left: 2rem;
@@ -959,14 +950,6 @@ main {
 
   .md\:mt-0 {
     margin-top: 0px;
-  }
-
-  .md\:mr-8 {
-    margin-right: 2rem;
-  }
-
-  .md\:ml-0 {
-    margin-left: 0px;
   }
 
   .md\:flex {
