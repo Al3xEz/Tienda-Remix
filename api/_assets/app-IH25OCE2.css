@@ -538,8 +538,12 @@ video {
   }
 }
 
-.relative {
-  position: relative;
+.absolute {
+  position: absolute;
+}
+
+.bottom-0 {
+  bottom: 0px;
 }
 
 .mx-auto {
@@ -565,16 +569,16 @@ video {
   margin-top: 3rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .flex {
   display: flex;
 }
 
 .grid {
   display: grid;
-}
-
-.min-h-screen {
-  min-height: 100vh;
 }
 
 .w-full {
@@ -634,10 +638,6 @@ video {
 .py-24 {
   padding-top: 6rem;
   padding-bottom: 6rem;
-}
-
-.pb-52 {
-  padding-bottom: 13rem;
 }
 
 .text-center {
@@ -710,6 +710,9 @@ body {
   font-size: 2rem;
   font-family: var(--fuente-principal);
   line-height: 1.5;
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 130px;
 }
 
 [class*="contenedor"],
@@ -745,10 +748,6 @@ main {
     position: absolute;
   }
 
-  .md\:relative {
-    position: relative;
-  }
-
   .md\:bottom-0 {
     bottom: 0px;
   }
@@ -773,10 +772,6 @@ main {
     margin-left: 0px;
   }
 
-  .md\:min-h-screen {
-    min-height: 100vh;
-  }
-
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -787,9 +782,5 @@ main {
 
   .md\:justify-between {
     justify-content: space-between;
-  }
-
-  .md\:pb-52 {
-    padding-bottom: 13rem;
   }
 }

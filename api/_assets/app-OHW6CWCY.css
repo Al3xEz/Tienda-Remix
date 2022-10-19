@@ -788,8 +788,4 @@ main {
   .md\:justify-between {
     justify-content: space-between;
   }
-
-  .md\:pb-52 {
-    padding-bottom: 13rem;
-  }
 }

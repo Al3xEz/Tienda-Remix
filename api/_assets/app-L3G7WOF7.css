@@ -538,8 +538,20 @@ video {
   }
 }
 
-.relative {
-  position: relative;
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.left-0 {
+  left: 0px;
 }
 
 .mx-auto {
@@ -552,9 +564,28 @@ video {
   margin-right: 2.5rem;
 }
 
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.my-14 {
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+}
+
 .my-20 {
   margin-top: 5rem;
   margin-bottom: 5rem;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .mt-16 {
@@ -573,8 +604,12 @@ video {
   display: grid;
 }
 
-.min-h-screen {
-  min-height: 100vh;
+.h-40 {
+  height: 10rem;
+}
+
+.h-80 {
+  height: 20rem;
 }
 
 .w-full {
@@ -636,10 +671,6 @@ video {
   padding-bottom: 6rem;
 }
 
-.pb-52 {
-  padding-bottom: 13rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -647,6 +678,11 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .text-6xl {
@@ -674,6 +710,11 @@ video {
 .text-amber-500 {
   --tw-text-opacity: 1;
   color: rgb(245 158 11 / var(--tw-text-opacity));
+}
+
+.text-amber-600 {
+  --tw-text-opacity: 1;
+  color: rgb(217 119 6 / var(--tw-text-opacity));
 }
 
 .transition {
@@ -741,16 +782,20 @@ main {
 }
 
 @media (min-width: 768px) {
+  .md\:fixed {
+    position: fixed;
+  }
+
   .md\:absolute {
     position: absolute;
   }
 
-  .md\:relative {
-    position: relative;
-  }
-
   .md\:bottom-0 {
     bottom: 0px;
+  }
+
+  .md\:left-0 {
+    left: 0px;
   }
 
   .md\:mt-0 {
@@ -765,16 +810,28 @@ main {
     margin-right: 2.5rem;
   }
 
-  .md\:mr-0 {
-    margin-right: 0px;
-  }
-
   .md\:ml-0 {
     margin-left: 0px;
   }
 
-  .md\:min-h-screen {
-    min-height: 100vh;
+  .md\:mr-0 {
+    margin-right: 0px;
+  }
+
+  .md\:mb-28 {
+    margin-bottom: 7rem;
+  }
+
+  .md\:mb-96 {
+    margin-bottom: 24rem;
+  }
+
+  .md\:grid {
+    display: grid;
+  }
+
+  .md\:w-full {
+    width: 100%;
   }
 
   .md\:grid-cols-2 {
@@ -787,9 +844,5 @@ main {
 
   .md\:justify-between {
     justify-content: space-between;
-  }
-
-  .md\:pb-52 {
-    padding-bottom: 13rem;
   }
 }

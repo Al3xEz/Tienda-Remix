@@ -636,8 +636,12 @@ video {
   padding-bottom: 6rem;
 }
 
-.pb-52 {
-  padding-bottom: 13rem;
+.pb-32 {
+  padding-bottom: 8rem;
+}
+
+.pb-40 {
+  padding-bottom: 10rem;
 }
 
 .text-center {
@@ -745,10 +749,6 @@ main {
     position: absolute;
   }
 
-  .md\:relative {
-    position: relative;
-  }
-
   .md\:bottom-0 {
     bottom: 0px;
   }
@@ -773,10 +773,6 @@ main {
     margin-left: 0px;
   }
 
-  .md\:min-h-screen {
-    min-height: 100vh;
-  }
-
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -787,9 +783,5 @@ main {
 
   .md\:justify-between {
     justify-content: space-between;
-  }
-
-  .md\:pb-52 {
-    padding-bottom: 13rem;
   }
 }

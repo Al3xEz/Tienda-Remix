@@ -48,7 +48,7 @@ function Document({ children }) {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="relative min-h-screen md:pb-52">
         <Header />
         {children}
         <Footer />

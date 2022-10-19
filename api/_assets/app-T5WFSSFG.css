@@ -538,10 +538,6 @@ video {
   }
 }
 
-.relative {
-  position: relative;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -571,10 +567,6 @@ video {
 
 .grid {
   display: grid;
-}
-
-.min-h-screen {
-  min-height: 100vh;
 }
 
 .w-full {
@@ -634,10 +626,6 @@ video {
 .py-24 {
   padding-top: 6rem;
   padding-bottom: 6rem;
-}
-
-.pb-52 {
-  padding-bottom: 13rem;
 }
 
 .text-center {
@@ -710,6 +698,8 @@ body {
   font-size: 2rem;
   font-family: var(--fuente-principal);
   line-height: 1.5;
+  position: relative;
+  padding-bottom: 140px;
 }
 
 [class*="contenedor"],
@@ -745,10 +735,6 @@ main {
     position: absolute;
   }
 
-  .md\:relative {
-    position: relative;
-  }
-
   .md\:bottom-0 {
     bottom: 0px;
   }
@@ -773,10 +759,6 @@ main {
     margin-left: 0px;
   }
 
-  .md\:min-h-screen {
-    min-height: 100vh;
-  }
-
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -787,9 +769,5 @@ main {
 
   .md\:justify-between {
     justify-content: space-between;
-  }
-
-  .md\:pb-52 {
-    padding-bottom: 13rem;
   }
 }
