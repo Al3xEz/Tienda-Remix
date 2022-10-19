@@ -6,7 +6,7 @@ const Navegacion = () => {
   return (
     <>
       {/* ----------------------Navegacion---------------------- */}
-      <nav className="text-white uppercase font-black text-3xl flex gap-8 mt-16 md:mt-0 mx-4">
+      <nav className="text-white uppercase font-black text-3xl flex gap-8 mt-16 md:mt-0 mx-20 md:mx-8">
         {/* -----------Index----------- */}
         <Link
           className={
