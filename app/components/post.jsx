@@ -4,7 +4,7 @@ import { formatearFecha } from "../utils/helpers";
 const Post = ({ post }) => {
   const { contenido, imagen, titulo, url, publishedAt } = post;
   return (
-    <article>
+    <article className="mx-6">
       <img
         className="mx-auto"
         src={imagen.data.attributes.formats.small.url}
