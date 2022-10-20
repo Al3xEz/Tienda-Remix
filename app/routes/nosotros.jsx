@@ -26,7 +26,7 @@ const Nosotros = () => {
       </h2>
 
       {/* ------------Contenido-Nosotros------------ */}
-      <div className="grid grid-cols-1 gap-20 md:grid-cols-2 items-center mx-10">
+      <div className="grid grid-cols-1 gap-20 md:grid-cols-2 items-center mx-6">
         {/* ------------Imagen-Nosotros------------ */}
         <img src={imagen} alt="Imagen Nosotros" />
 
