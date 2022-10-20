@@ -1,6 +1,24 @@
 import { useLoaderData } from "@remix-run/react";
 
+export async function loader({ params }) {
+  const { guitarraUrl } = params;
+  const guitarra = await getGuitarra(guitarraUrl);
+
+  if (guitarra.data.length === 0) {
+    throw new Response("", {
+      status: 404,
+      statusText: "Guitarra no encontrada",
+    });
+  }
+  return guitarra;
+}
+
 export function meta({ data }) {
+  if (!data) {
+    return {
+      title: `GuitarLA - 404`,
+    };
+  }
   return {
     title: `GuitarLA - ${data.data[0].attributes.nombre}`,
   };
@@ -13,14 +31,6 @@ export async function getGuitarra(url) {
   const resultado = await respuesta.json();
 
   return resultado;
-}
-
-export async function loader({ params }) {
-  const { guitarraUrl } = params;
-
-  const guitarra = await getGuitarra(guitarraUrl);
-
-  return guitarra;
 }
 
 const Guitarra = () => {

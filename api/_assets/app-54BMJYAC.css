@@ -622,11 +622,6 @@ video {
   width: 100%;
 }
 
-.w-max {
-  width: -moz-max-content;
-  width: max-content;
-}
-
 .max-w-5xl {
   max-width: 64rem;
 }

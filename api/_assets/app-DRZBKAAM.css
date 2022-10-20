@@ -594,16 +594,8 @@ video {
   margin-bottom: 3rem;
 }
 
-.mt-32 {
-  margin-top: 8rem;
-}
-
 .block {
   display: block;
-}
-
-.inline-block {
-  display: inline-block;
 }
 
 .flex {
@@ -620,11 +612,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-max {
-  width: -moz-max-content;
-  width: max-content;
 }
 
 .max-w-5xl {
