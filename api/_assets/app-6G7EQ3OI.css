@@ -704,10 +704,6 @@ video {
   padding: 0.5rem;
 }
 
-.p-5 {
-  padding: 1.25rem;
-}
-
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -820,10 +816,6 @@ video {
   transition-duration: 500ms;
 }
 
-.duration-300 {
-  transition-duration: 300ms;
-}
-
 .line-clamp-4 {
   display: -webkit-box;
   -webkit-line-clamp: 4;
@@ -890,11 +882,6 @@ main {
       rgb(0 0 0 / 0.7)
     ),
     url(/img/header.jpg);
-}
-
-.hover\:bg-amber-500:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(245 158 11 / var(--tw-bg-opacity));
 }
 
 .hover\:text-amber-500:hover {

@@ -820,10 +820,6 @@ video {
   transition-duration: 500ms;
 }
 
-.duration-300 {
-  transition-duration: 300ms;
-}
-
 .line-clamp-4 {
   display: -webkit-box;
   -webkit-line-clamp: 4;
