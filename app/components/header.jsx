@@ -14,7 +14,7 @@ const Header = () => {
         </Link>
 
         {/* ----------------------Navegacion---------------------- */}
-        <nav className="text-white uppercase font-black flex gap-8 text-xl md:text-3xl mx-10 md:ml-0 mt-16 md:mt-0 ">
+        <nav className="text-white uppercase font-black flex gap-8 text-2xl md:text-3xl mx-10 md:ml-0 mt-16 md:mt-0 ">
           {/* -----------Index----------- */}
           <Link
             className={
