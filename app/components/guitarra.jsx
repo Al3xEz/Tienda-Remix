@@ -17,7 +17,7 @@ const Guitarra = ({ guitarra }) => {
           <p className="line-clamp-6 text-3xl">{descripcion}</p>
           <p className="text-amber-500 text-7xl font-black my-10">${precio}</p>
 
-          <Link className="block bg-black text-white text-center p-3 uppercase text-2xl font-black hover:bg-amber-500 transition duration-300" to={`/guitarras/${url}`}>Ver Producto</Link>
+          <Link className="block bg-black text-white text-center p-3 uppercase text-2xl font-bold hover:bg-amber-500 transition duration-300" to={`/guitarras/${url}`}>Ver Producto</Link>
         </div>
       </div>
     </>

@@ -563,11 +563,6 @@ video {
   margin-right: auto;
 }
 
-.my-20 {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
-
 .my-10 {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
@@ -578,18 +573,13 @@ video {
   margin-right: 2.5rem;
 }
 
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+.my-20 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
-.mx-6 {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-}
-
-.mt-32 {
-  margin-top: 8rem;
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .mt-16 {
@@ -604,12 +594,16 @@ video {
   margin-bottom: 3rem;
 }
 
-.mt-8 {
-  margin-top: 2rem;
+.mt-32 {
+  margin-top: 8rem;
 }
 
 .block {
   display: block;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .flex {
@@ -624,21 +618,17 @@ video {
   min-height: 100vh;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .w-max {
   width: -moz-max-content;
   width: max-content;
 }
 
-.w-full {
-  width: 100%;
-}
-
 .max-w-5xl {
   max-width: 64rem;
-}
-
-.max-w-7xl {
-  max-width: 80rem;
 }
 
 .grid-cols-5 {
@@ -669,16 +659,16 @@ video {
   gap: 1rem;
 }
 
-.gap-16 {
-  gap: 4rem;
-}
-
 .gap-20 {
   gap: 5rem;
 }
 
-.whitespace-pre-wrap {
-  white-space: pre-wrap;
+.gap-12 {
+  gap: 3rem;
+}
+
+.gap-16 {
+  gap: 4rem;
 }
 
 .bg-zinc-900 {
@@ -745,11 +735,6 @@ video {
   text-align: center;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -773,6 +758,20 @@ video {
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-\[45px\] {
+  font-size: 45px;
 }
 
 .font-bold {
@@ -810,12 +809,12 @@ video {
   transition-duration: 150ms;
 }
 
-.duration-300 {
-  transition-duration: 300ms;
-}
-
 .duration-500 {
   transition-duration: 500ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
 }
 
 .line-clamp-4 {
@@ -908,6 +907,10 @@ main {
 
   .md\:ml-0 {
     margin-left: 0px;
+  }
+
+  .md\:grid {
+    display: grid;
   }
 
   .md\:grid-cols-2 {
