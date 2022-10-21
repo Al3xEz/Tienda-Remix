@@ -1,5 +1,6 @@
 import { Link, useLocation } from "@remix-run/react";
 import logo from "../../public/img/logo.svg";
+import carritoImg from "../../public/img/carrito.png";
 
 const Header = () => {
   const location = useLocation();
@@ -14,7 +15,7 @@ const Header = () => {
         </Link>
 
         {/* ----------------------Navegacion---------------------- */}
-        <nav className="text-white uppercase font-black flex gap-4 text-2xl md:text-3xl mx-10 md:ml-0 mt-16 md:mt-0 ">
+        <nav className="text-white uppercase font-black flex gap-4 text-2xl md:text-3xl mx-10 md:ml-0 mt-16 md:mt-0 items-center">
           {/* -----------Index----------- */}
           <Link
             className={
@@ -61,6 +62,10 @@ const Header = () => {
             to="/blog"
           >
             Blog
+          </Link>
+
+          <Link to="/carrito">
+            <img className="w-12" src={carritoImg} alt="logo carrito" />
           </Link>
         </nav>
       </div>
