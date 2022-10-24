@@ -26,20 +26,6 @@ body {
   line-height: 1.5;
 }
 
-[class*="contenedor"],
-main {
-  width: min(95%, 120rem);
-  margin: 3rem auto;
-}
-
-[class*="heading"] {
-  font-size: 4rem;
-  text-align: center;
-  font-weight: 900;
-  color: var(--primary);
-  margin: 5rem 0;
-}
-
 .header {
   background-image: linear-gradient(
       to right,

@@ -13,7 +13,8 @@
     "@remix-run/vercel": "^1.7.2",
     "@vercel/node": "^2.4.4",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "remix-utils": "^3.4.0"
   },
   "devDependencies": {
     "@neojp/tailwindcss-line-clamp-utilities": "^1.0.1",

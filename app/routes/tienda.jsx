@@ -17,7 +17,7 @@ export async function loader() {
 const Tienda = () => {
   const guitarras = useLoaderData();
   return (
-    <main className="container mx-auto">
+    <main className="container mx-auto mb-16">
       <h2 className="text-6xl font-black text-center text-amber-500 my-20">
         Nuesta Coleccion
       </h2>

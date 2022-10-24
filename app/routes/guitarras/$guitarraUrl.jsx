@@ -1,4 +1,4 @@
-import { useLoaderData } from "@remix-run/react";
+import { useLoaderData, useOutletContext } from "@remix-run/react";
 import { useState } from "react";
 
 export async function loader({ params }) {
@@ -35,6 +35,7 @@ export async function getGuitarra(url) {
 }
 
 const Guitarra = () => {
+  const { agregarCarrito } = useOutletContext();
   const [cantidad, setCantidad] = useState(0);
   const guitarra = useLoaderData();
   const { nombre, descripcion, imagen, precio } = guitarra.data[0].attributes;
@@ -54,6 +55,8 @@ const Guitarra = () => {
       precio,
       cantidad,
     };
+
+    agregarCarrito(guitarraSeleccionada);
   };
 
   return (
@@ -75,7 +78,7 @@ const Guitarra = () => {
             Cantidad
           </label>
           <select
-            className="text-center p-4 border-2 border-solid rounded-xl border-black"
+            className="appearance-none text-center p-4 border-2 border-solid rounded-xl border-black"
             name="cantidad"
             id="cantidad"
             onChange={(event) => {

@@ -554,16 +554,24 @@ video {
   bottom: 0px;
 }
 
+.top-8 {
+  top: 2rem;
+}
+
+.top-3 {
+  top: 0.75rem;
+}
+
 .top-7 {
   top: 1.75rem;
 }
 
-.right-3 {
-  right: 0.75rem;
+.right-2 {
+  right: 0.5rem;
 }
 
-.top-8 {
-  top: 2rem;
+.right-3 {
+  right: 0.75rem;
 }
 
 .col-span-2 {
@@ -661,10 +669,6 @@ video {
 
 .mb-20 {
   margin-bottom: 5rem;
-}
-
-.mb-16 {
-  margin-bottom: 4rem;
 }
 
 .mb-5 {

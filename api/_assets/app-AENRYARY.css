@@ -663,16 +663,16 @@ video {
   margin-bottom: 5rem;
 }
 
-.mb-16 {
-  margin-bottom: 4rem;
-}
-
 .mb-5 {
   margin-bottom: 1.25rem;
 }
 
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
 }
 
 .block {
