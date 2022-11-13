@@ -8,10 +8,10 @@ export function meta() {
 }
 
 export async function loader() {
-  const url = `${process.env.API_URL}/guitarras?populate=imagen`;
+  const url = `${process.env.API_URL}/guitarras`;
   const respuesta = await fetch(url);
   const resultado = await respuesta.json();
-  return resultado.data;
+  return resultado;
 }
 
 const Tienda = () => {
@@ -24,7 +24,7 @@ const Tienda = () => {
       {guitarras?.length && (
         <div className="grid gap-20 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {guitarras.map((guitarra) => (
-            <Guitarra key={guitarra?.id} guitarra={guitarra?.attributes} />
+            <Guitarra key={guitarra?._id} guitarra={guitarra} />
           ))}
         </div>
       )}

@@ -8,10 +8,10 @@ export function meta() {
 }
 
 export async function loader() {
-  const url = `${process.env.API_URL}/posts?populate=imagen`;
+  const url = `${process.env.API_URL}/posts`;
   const respuesta = await fetch(url);
   const resultado = await respuesta.json();
-  return resultado.data;
+  return resultado;
 }
 
 const Blog = () => {
@@ -24,7 +24,7 @@ const Blog = () => {
       </h2>
       <div className="grid grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-3">
         {posts.map((post) => (
-          <Post key={post.id} post={post.attributes} />
+          <Post key={post._id} post={post} />
         ))}
       </div>
     </main>

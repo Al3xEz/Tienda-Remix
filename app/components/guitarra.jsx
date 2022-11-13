@@ -1,7 +1,7 @@
 import { Link } from "@remix-run/react";
 
 const Guitarra = ({ guitarra }) => {
-  const { descripcion, imagen, precio, url, nombre } = guitarra;
+  const { descripcion, imagenMedium, precio, nombre, _id } = guitarra;
   return (
     <>
       {/* ----------------------Guitarra---------------------- */}
@@ -9,7 +9,7 @@ const Guitarra = ({ guitarra }) => {
         {/* ----------------------Contenido-Guitarra---------------------- */}
         <img
           className="col-span-2"
-          src={imagen.data.attributes.formats.medium.url}
+          src={imagenMedium}
           alt={`Imagen guitarra ${nombre}`}
         />
         <div className="col-span-3 p-4">
@@ -21,7 +21,7 @@ const Guitarra = ({ guitarra }) => {
 
           <Link
             className="block bg-black text-white text-center p-3 uppercase text-2xl font-bold hover:bg-amber-500 transition duration-300"
-            to={`/guitarras/${url}`}
+            to={`/guitarras/${_id}`}
           >
             Ver Producto
           </Link>

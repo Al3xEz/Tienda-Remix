@@ -9,7 +9,7 @@ const Curso = ({ curso }) => {
               rgb(0 0 0 / 0.65),
               rgb(0 0 0 / 0.7)
             ),
-            url(${imagen.data.attributes.url});
+            url(${imagen});
         }
       `}</style>
       <div className="container mx-auto md:grid md:grid-cols-2">

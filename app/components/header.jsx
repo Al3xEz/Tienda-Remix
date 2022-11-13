@@ -15,7 +15,7 @@ const Header = () => {
         </Link>
 
         {/* ----------------------Navegacion---------------------- */}
-        <nav className="text-white uppercase font-black flex gap-4 text-2xl md:text-3xl mx-10 md:ml-0 mt-16 md:mt-0 ">
+        <nav className="text-white uppercase font-black sm:flex grid grid-cols-2 sm:flex-row gap-4 text-2xl md:text-3xl mx-10 md:ml-0 mt-16 md:mt-0 ">
           {/* -----------Index----------- */}
           <Link
             className={
@@ -64,7 +64,7 @@ const Header = () => {
             Blog
           </Link>
 
-          <Link to="/carrito">
+          <Link className="col-start-2" to="/carrito">
             <img className="w-16" src={carritoImg} alt="logo carrito" />
           </Link>
         </nav>

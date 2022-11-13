@@ -1,11 +1,12 @@
 import { useLoaderData, useOutletContext } from "@remix-run/react";
 import { useState } from "react";
+import Alerta from "../../components/Alerta";
 
 export async function loader({ params }) {
   const { guitarraUrl } = params;
   const guitarra = await getGuitarra(guitarraUrl);
 
-  if (guitarra.data.length === 0) {
+  if (Object.keys(guitarra) === 0) {
     throw new Response("", {
       status: 404,
       statusText: "Guitarra no encontrada",
@@ -21,14 +22,12 @@ export function meta({ data }) {
     };
   }
   return {
-    title: `GuitarLA - ${data.data[0].attributes.nombre}`,
+    title: `GuitarLA`,
   };
 }
 
 export async function getGuitarra(url) {
-  const respuesta = await fetch(
-    `${process.env.API_URL}/guitarras?filters[url]=${url}&populate=imagen`
-  );
+  const respuesta = await fetch(`${process.env.API_URL}/guitarras/${url}`);
   const resultado = await respuesta.json();
 
   return resultado;
@@ -38,24 +37,25 @@ const Guitarra = () => {
   const { agregarCarrito } = useOutletContext();
   const [cantidad, setCantidad] = useState(0);
   const guitarra = useLoaderData();
-  const { nombre, descripcion, imagen, precio } = guitarra.data[0].attributes;
+  const { nombre, descripcion, imagen, precio, _id } = guitarra;
+  const [alerta, setAlerta] = useState(false);
 
   const handleSubmit = (event) => {
     event.preventDefault();
 
     if (cantidad === 0) {
-      alert("Debe seleccionar una cantidad");
+      setAlerta({ msg: "Debe seleccionar una cantidad", error: true });
       return;
     }
 
     const guitarraSeleccionada = {
-      id: guitarra.data[0].id,
-      imagen: imagen.data.attributes.url,
+      id: _id,
+      imagen,
       nombre,
       precio,
       cantidad,
     };
-
+    setAlerta({ msg: "Se ha agregado al carrito", error: false });
     agregarCarrito(guitarraSeleccionada);
   };
 
@@ -63,7 +63,7 @@ const Guitarra = () => {
     <main className="container mx-auto grid grid-cols-5 gap-2 items-center max-w-5xl">
       <img
         className="col-span-2"
-        src={imagen.data.attributes.url}
+        src={imagen}
         alt={`Imagen de la guitarra ${nombre}`}
       />
       <div className="col-span-3 p-4">
@@ -92,12 +92,12 @@ const Guitarra = () => {
             <option value="4">4</option>
             <option value="5">5</option>
           </select>
-
           <input
             className="mt-10 bg-black text-white uppercase p-5 cursor-pointer font-bold hover:bg-amber-500 transition duration-300"
             type="submit"
             value="Agregar al Carrito"
           />
+          <div className="mt-6">{alerta.msg && <Alerta alert={alerta} />}</div>
         </form>
       </div>
     </main>
