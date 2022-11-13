@@ -40,6 +40,10 @@ export function links() {
       rel: "stylesheet",
       href: styles,
     },
+    {
+      rel: "icon",
+      href: "/icono.svg",
+    },
   ];
 }
 
