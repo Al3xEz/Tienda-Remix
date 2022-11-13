@@ -1,5 +1,4 @@
 import { useLoaderData } from "@remix-run/react";
-import { formatearFecha } from "../../utils/helpers";
 
 export async function loader({ params }) {
   const { postUrl } = params;
