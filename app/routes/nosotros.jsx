@@ -19,7 +19,7 @@ export function links() {
 const Nosotros = () => {
   return (
     /* ----------------------Nosotros---------------------- */
-    <main className="container">
+    <main className="container mx-auto">
       {/* ----------------------Titulo-Nosotros---------------------- */}
       <h2 className="text-6xl font-black text-center text-amber-500 my-20">
         Nosotros
